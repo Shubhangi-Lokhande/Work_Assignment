@@ -1,0 +1,71 @@
+@media only screen and (max-width: 768px) {
+
+    .flexContainer0, .flexContainer1{
+        flex-direction: column;
+      /*  justify-content: center;
+        align-items: center;*/
+    }
+    
+    .flexContainer0 > .leftPanel, .flexContainer1 > .leftPanel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pageTitle{
+        margin-bottom:2%;
+    }
+    .setRelative {
+        margin-top: 3%;
+    }
+
+    .flexContainer0 .rightPanel, .flexContainer1 .rightPanel {
+        width: 100%;
+    }
+
+    #myForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .formSection{
+        margin-top: 1%;
+    }
+    #fname,#phone,#email,#subject,#submitBtn{
+        margin-bottom:5px;
+    }
+    .sFlex > img{
+        margin-bottom:1%;
+    }
+  
+    .tooltipName{
+        margin: -22% 0 0 57%;
+        width: 13%;
+    }
+
+    .tooltipText{
+        margin: -10% 0 0 57%;
+        width: 13%;
+    }
+
+
+    #subscribeMe{
+        width:52px;
+    }
+}
+
+@media only screen and (min-device-width : 552px) and (max-device-width : 768px) {
+    .tooltipName{
+        margin: -19% 0 0 57%;
+        width: 13%;
+    }
+
+    .tooltipText{
+        margin: -8% 0 0 57%;
+        width: 13%;
+    }
+ }

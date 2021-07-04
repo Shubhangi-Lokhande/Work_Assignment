@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mobileStyle.css">
+
+    </head>
+    <body>
+    <main>
+        <div id="home">
+          
+               <div class="header">
+                    <a href="#home">Home</a>
+                    <a href="#aboutUs">About Us</a>
+                    <a href="#ourProduct">PROJECTS</a>  
+                    <a id="oneCls" href="#contactUs">CONTACT US</a>        
+                </div> 
+              
+                <div class="homeTile"> 
+                 
+                    <div class="mySlides"> 
+                        <!-- <div class="imgTxt">aaa</div> -->
+                      <img class="img1" src="assets/image4.jpg" width="100%">    
+                    </div> 
+                    <div class="mySlides fade">
+                        <!-- <div class="imgTxt">bbb</div> -->
+                    <img class="img1" src="assets/image7.jpg" width="100%">
+                    </div>  
+                    <div class="mySlides fade">
+                        <!-- <div class="imgTxt">ccc</div> -->
+                        <img class="img1" src="assets/image6.jpg" width="100%">
+                    </div>  
+                   <div class="slideCenterTxt">
+                       <div class="f1">Welcome to site</div>
+                        <span class="f2">New Bootstrap Template</span> 
+
+                   </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <div class="downArrow"><a href="#aboutUs"><img src="assets/down_arrow.png"/></a></div>
+                </div>
+
+        </div>
+        <section id="aboutUs">
+            <div class="flexContainer">
+                <div class="flexItem" style="padding-right:2%">
+                    <div class="pageTitle">About Us</div>
+                    <div class="blackHeading">What is Lorem Ipsum?</div>
+
+                    <div class="iconImages">
+                         <div class="iconTxt"><img src="assets/tele_arrw.png"/>TOP NOTCH</div>  
+                         <div class="iconTxt"><img src="assets/tele_arrw.png"/>ROBUST</div>  
+                         <div class="iconTxt"><img src="assets/tele_arrw.png"/>RELIABLE</div>  
+                         <div class="iconTxt"><img src="assets/tele_arrw.png"/>UP-TO-DATE</div>
+                         
+                    </div>
+                    <button class="btnLearnMore" onclick="fnLearnMore()">Learn More</button >
+                </div>
+                <div class="flexItem" style="padding-top:4%">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br> 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    <br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+            </div>
+
+            <div class="flexBox2">
+                <div class="smallFLex">
+                  <div class="flex2Img" style="width:100%"> <img src="assets/collection.png"></div>
+                    <div class="flex2Txt"><h3>Lorem Ipsum</h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br><h5 class="learnLink" onclick="fnLearnMore()">LEARN MORE</h5> </div>
+                </div>
+                <div class="smallFLex">
+                    <div class="flex2Img" style="width:100%"> <img src="assets/collection.png"></div>
+                      <div class="flex2Txt"><h3>Lorem Ipsum</h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br><h5 class="learnLink" onclick="fnLearnMore()">LEARN MORE</h5> </div>
+                  </div>
+                  <div class="smallFLex">
+                    <div class="flex2Img" style="width:100%"> <img src="assets/collection.png"></div>
+                      <div class="flex2Txt"><h3>Lorem Ipsum</h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br><h5 class="learnLink" onclick="fnLearnMore()">LEARN MORE</h5> </div>
+                  </div>
+            </div>
+           <div class="flex2Img">
+               <div class="blueGrad">
+                    <div class="innerTxt">
+                        <div>What is Lorem Ipsum?</div>
+                        <div class="fontBig">Don't miss the chance!</div>
+                        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                        <div>
+                            <input type="text" class="subEmail" placeholder="Enter your Email"/>
+                            <button id="subscribeMe" class="btnLearnMore">Subscribe now</button>
+                        </div>
+                    </div>
+               </div>
+                
+           </div>
+        </section>
+        <section id="ourProduct">
+            <div class="flexContainer0">
+                <div class="leftPanel">
+                    <div class="pageTitle">OUR PROJECTS</div>
+                    <div class="blflexContainerackHeading">What is Lorem Ipsum?</div>
+                    <div class="setRelative">
+                        <div><a>All</a></div>
+                        <div><a>WEB DESIGN</a></div>
+                        <div><a>WEB DEVELOPMENT</a></div>
+                        <div><a>GRAPHICS</a></div>
+                        <div><a>ART WORK</a></div>
+                    </div>
+
+                </div>
+                <div class="rightPanel">
+                    <img src='assets/nature.jpg'>
+                    <img src='assets/nature1.jpg'>
+                    <img src='assets/nature2.jpg'>
+                    <img src='assets/nature4.jpg'>
+                    <img src='assets/nature3.jpg'>
+                    <img src='assets/nature5.jpg'>
+                </div>
+             </div>   
+        </section>
+
+        <section id="animCls">
+            <div class="flex2Img">
+              
+                <div class="slideContainer">
+                    <div class="animSlide">
+                        <div class="headTxt">Digital Team</div>
+                        <div class="headTxt2">young and talented members</div>
+                        <div class="sFlex">
+                            <img src='assets/nature.jpg'>
+                            <img src='assets/nature.jpg'>
+                            <img src='assets/nature.jpg'>
+                        </div>
+                    </div>  
+                    <div class="animSlide">
+                        <div class="headTxt">Digital Team1</div>
+                        <div class="headTxt2">young and talented members1</div>
+                        <div class="sFlex">
+                            <img src='assets/nature2.jpg'>
+                            <img src='assets/nature2.jpg'>
+                            <img src='assets/nature2.jpg'>
+                        </div>
+                    </div>  
+
+                    <div class="animSlide">
+                        <div class="headTxt">Digital Team2</div>
+                        <div class="headTxt2">young and talented members2</div>
+                        <div class="sFlex">
+                            <img src='assets/nature1.jpg'>
+                            <img src='assets/nature1.jpg'>
+                            <img src='assets/nature1.jpg'>
+                        </div>
+                    </div>  
+
+
+
+                    <div style="text-align:center">
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                    </div>
+                </div>    
+                   
+            
+           </div>
+
+
+           
+        </section>
+        <section id="contactUs">
+            <div class="flexContainer1">
+                <div class="leftPanel">
+                    <div class="pageTitle">CONTACT US</div>
+                    <div class="blackHeading">Feel Free to keep in touch with us!</div>
+                    <div class="setRelative">
+                        <div><img src="assets/socialIcon/phone.png">010-080-0034</div>
+                        <div><img src="assets/socialIcon/email.png">info@company.com</a></div>
+                        <div><img src="assets/socialIcon/bigGlobe.png">www.company.com</a></div>
+                      
+                    </div>
+
+                </div>
+                <div id="rightBox" class="rightPanel">
+                    <div class="formSection">
+                        <form id="myForm" name="myForm"  onsubmit="return fnValidateForm()">
+                        <input type="text" name="fname" id="fname" placeholder="Your Name*">
+                             <div id="tooltipName" class="tooltipName hide"></div>
+                        <input type="text" name="phone" id="phone" placeholder="Your Phone">
+                        <input type="text" name="email" id="email" placeholder="Your Email*">
+                            <div id="tooltipText" class="tooltipText hide"></div>
+                        <input type="text" name="subject" id= placeholder="Subject">   
+                        <textarea id="txtArea" name="comment" rows="4" cols="50" style="resize: none;"></textarea>
+                        <br/><br/>
+                        <input id="submitBtn" type="submit" value="SEND MESSAGE NOW"></input>
+                        </form>
+                    </div>     
+                </div>
+             </div> 
+
+             <div class="greenGradient">
+                <div class="copyRightTxt">Copyright @ 2020 Breezed Co.Ltd. Design TemplateMo</div>    
+                 <div class='socialIcon'>
+                    <span>FOLLOW US</span>
+                    <img src="assets/socialIcon/fb.png"/>
+                    <img src="assets/socialIcon/link.png"/>
+                    <img src="assets/socialIcon/tweet.png"/>
+                    <img src="assets/socialIcon//globe.png"/>
+                 </div>
+             </div>
+        </section>
+         
+
+    </main> 
+        <script src="main.js"></script>
+    </body> 
+</html>

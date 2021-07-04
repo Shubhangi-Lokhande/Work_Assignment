@@ -1,0 +1,471 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1vw;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.fontBig {
+  font-size: 1.8vw;
+}
+
+.setRelative {
+  margin-top: 10%;
+}
+
+.setRelative div {
+  position: relative;
+  margin-bottom: 7%;
+}
+
+#home, #aboutUs, #ourProduct, #contactUs, #animCls {
+  position: relative;
+  max-width: 1000px;
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.homeTile {
+  height: auto;
+}
+
+.header a {
+  text-decoration: none;
+  margin: 10px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  right: 10px;
+  margin: 10px;
+}
+
+.imgTxt {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  font-size: 1.2vw;
+  position: absolute;
+  top: 50%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  font-weight: bold;
+}
+
+.img1 {
+  opacity: 0.5;
+}
+
+.learnLink {
+  color: #069906;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5%;
+}
+
+.flexContainer0 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5%;
+}
+
+.flexContainer0 .leftPanel {
+  width: 23%;
+}
+
+.flexContainer0 .rightPanel {
+  width: 66%;
+}
+
+.flexContainer1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5%;
+}
+
+.flexContainer1 .leftPanel {
+  width: 30%;
+  padding-left: 5%;
+}
+
+.flexContainer1 .rightPanel {
+  width: 70%;
+}
+
+.flexContainer > .flexItem {
+  background-color: #f1f1f1;
+  width: 50%;
+  text-align: left;
+  margin: 2%;
+  padding-left: 2%;
+}
+
+.downArrow {
+  position: absolute;
+  bottom: -3%;
+  left: 45%;
+  cursor: pointer;
+}
+
+/* ABOUT US Styles */
+.pageTitle {
+  color: yellowgreen;
+  font-size: 1.1vw;
+  margin-bottom: 5%;
+}
+
+.blackHeading {
+  font-size: 1.4vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.iconImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 2% 2% 2% 0%;
+}
+
+.iconTxt {
+  width: 185px;
+}
+
+button[class~=btnLearnMore] {
+  clear: both;
+  width: 30%;
+  text-align: center;
+  background-color: yellowgreen;
+  border-radius: 15px;
+  line-height: 2.3;
+  cursor: pointer;
+}
+
+.subEmail {
+  width: 30%;
+  border-radius: 20px;
+  line-height: 2;
+}
+
+#subscribeMe {
+  background-color: #fff;
+  color: green;
+  width: 130px;
+}
+
+#subscribeMe:hover {
+  color: #fff;
+  background-color: green;
+}
+
+.flexBox2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5%;
+}
+
+.flexBox2 > div {
+  width: 33%;
+  height: auto;
+  margin: 2%;
+  padding-left: 2%;
+  border: solid #000 1px;
+}
+
+.smallFLex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex2Img {
+  padding-top: 3%;
+}
+
+.flex2Txt {
+  padding-right: 3%;
+}
+
+.blueGrad {
+  background-image: -webkit-gradient(linear, left top, right top, from(#445b91), color-stop(#7cb1c3), to(#8996b1));
+  background-image: linear-gradient(to right, #445b91, #7cb1c3, #8996b1);
+  height: auto;
+}
+
+.innerTxt {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  padding: 2%;
+}
+
+.innerTxt > div {
+  margin-top: 2%;
+}
+
+.leftPanel {
+  width: 30%;
+}
+
+.flexContainer0 > .rightPanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 3%;
+}
+
+.rightPanel > img {
+  background-color: #f1f1f1;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.formSection {
+  width: 100%;
+  margin-top: 4%;
+}
+
+#myForm > input {
+  height: 2vw;
+  width: 38%;
+}
+
+#txtArea {
+  width: 38%;
+}
+
+#submitBtn {
+  width: 20%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#417c79), color-stop(#3dcfb3), to(#24bf86));
+  background-image: linear-gradient(to right, #417c79, #3dcfb3, #24bf86);
+  color: #fff;
+  font-size: 1.2vw;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#submitBtn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#fname, #phone, #email, #subject, #submitBtn {
+  margin-bottom: 20px;
+}
+
+.f1 {
+  font-size: 1.8vw;
+  margin-bottom: 1.5%;
+}
+
+.f2 {
+  font-size: 2.5vw;
+}
+
+.slideCenterTxt {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+
+.greenGradient {
+  background-image: -webkit-gradient(linear, left top, right top, from(#417c79), color-stop(#3dcfb3), to(#24bf86));
+  background-image: linear-gradient(to right, #417c79, #3dcfb3, #24bf86);
+  position: absolute;
+  width: 100%;
+}
+
+.socialIcon {
+  color: #fff;
+  display: inline;
+  float: right;
+  margin: 3%;
+}
+
+.copyRightTxt {
+  position: absolute;
+  width: 50%;
+  top: 40%;
+  left: 10%;
+  color: #fff;
+}
+
+.slideContainer {
+  background-color: #696eb2;
+}
+
+.headTxt, .headTxt2 {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  margin-top: 5%;
+}
+
+.headTxt2 {
+  font-size: 2.2vw;
+  margin-top: 2%;
+}
+
+.sFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2% 0 5% 0;
+}
+
+.sFlex > img {
+  background-color: #f1f1f1;
+  margin-left: 1%;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.tooltipText, .tooltipName {
+  position: absolute;
+  color: #fff;
+  background-color: #574848;
+  padding: 3px;
+  width: 100px;
+  border-radius: 5px;
+  z-index: 1;
+  margin: -2% 0 0 3%;
+}
+
+.tooltipText[class~=show], .tooltipName[class~=show] {
+  display: block;
+}
+
+.tooltipText[class~=hide], .tooltipName[class~=hide] {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

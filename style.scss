@@ -1,0 +1,391 @@
+@import 'mixin';
+@import 'globalVar';
+
+* {box-sizing: border-box; font-size:1vw}
+body {margin:0 auto}
+.mySlides {display: none}
+img {vertical-align: middle;}
+.fontBig{
+    font-size: 1.8vw;
+}
+
+
+.setRelative {
+
+   @include setMargin(top,10%);
+    
+    div{
+         position:relative;
+         @include setMargin(bottom,7%);
+    }
+} 
+#home, #aboutUs, #ourProduct, #contactUs, #animCls{
+    position:relative;
+    max-width:1000px;
+    min-width:320px;
+    width:100%;
+    margin:0 auto;
+   
+}
+
+.homeTile {
+   height: auto;
+  }
+
+  .header a{
+      text-decoration: none;
+      margin:10px;
+  }
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+ 
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+
+  
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+ 
+
+  .header{
+      position:absolute;
+      top:0px;
+     z-index:1;    
+     right:10px;
+    margin:10px;
+  }
+
+  .imgTxt{
+      text-align: center;
+      width:100%;
+      margin:auto;
+      @include setFontSize(1.2vw);
+      position:absolute;
+      top:50%;
+      box-sizing: content-box;
+      font-weight:bold;
+  }
+.img1{
+    opacity:0.5;
+}
+.learnLink{
+    color:rgb(6, 153, 6);
+    text-decoration: underline;
+    cursor: pointer;
+}
+  
+.flexContainer {
+    @include flexContainerBox;
+}
+.flexContainer0 {
+   @include flexContainerBox;
+   
+   .leftPanel{
+       width:23%;
+     
+   }
+   .rightPanel{
+       width:66%;
+      
+   }
+  }
+  
+.flexContainer1 {
+    @include flexContainerBox;
+    
+    .leftPanel{
+        width:30%;
+        @include setPadding(left,5%)
+    }
+    .rightPanel{
+        width:70%;
+       
+    }
+   }
+  
+  .flexContainer > .flexItem {
+    background-color: #f1f1f1;
+    width: 50%;
+    text-align: left;
+    margin:2%;
+    @include setPadding(left,2%);
+    
+  }
+ 
+  .downArrow{
+      position:absolute;
+      bottom:-3%;
+      left:45%;
+      cursor: pointer;
+  }
+/* ABOUT US Styles */
+
+.pageTitle{
+    color:$greenColor;
+    @include setFontSize(1.1vw);
+    @include setMargin(bottom,5%);
+  
+}
+.blackHeading{
+    @include setFontSize(1.4vw);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img{
+
+    max-width: 100%;
+    height: auto;
+}
+
+.iconImages{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding:2% 2% 2% 0%;
+}
+.iconTxt{
+   width:185px;
+}
+
+button[class ~= btnLearnMore]{
+    clear: both;
+    width: 30%;
+    text-align: center;
+    background-color: yellowgreen;
+    border-radius: 15px;
+    line-height: 2.3;
+    cursor: pointer;
+  }
+
+.subEmail{
+    width:30%;
+    border-radius:20px;
+    line-height: 2;
+}
+
+  #subscribeMe{
+      background-color: #fff;
+      color:green;
+      width:130px;
+  }
+
+  #subscribeMe:hover{
+   color: #fff;
+   background-color:green;
+  }
+  
+.flexBox2{
+    @include flexContainerBox;
+}
+.flexBox2 > div{
+    width:33%;
+    height:auto;
+    margin:2%;
+    @include setPadding(left,2%);
+    border:solid #000 1px;
+}
+
+.smallFLex{
+    display: flex;
+    flex-direction: row;
+}
+.flex2Img{
+    @include setPadding(top,3%);
+}
+.flex2Txt{
+    @include setPadding(right,3%)
+}
+
+.blueGrad{
+    background-image: linear-gradient(to right, #445b91, #7cb1c3,#8996b1);
+    height:auto;
+}
+
+.innerTxt{
+    text-align:center;
+    width:100%;
+    color:#fff;
+    padding: 2%;
+}
+
+.innerTxt > div{
+    margin-top: 2%;
+}
+
+.leftPanel{
+    width:30%;
+}
+.flexContainer0 > .rightPanel{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include setMargin(top,3%);
+ 
+}
+.rightPanel > img{
+    background-color: #f1f1f1;
+   @include setMargin(left,2%);
+   @include setMargin(bottom,2%);
+  
+}
+
+
+
+.formSection{
+    width:100%;
+    margin-top:4%;
+}
+#myForm > input{ 
+    height:2vw;
+    width:38%;
+}
+#txtArea{
+    width:38%;
+}
+#submitBtn{
+    width:20%;
+    background-image: linear-gradient(to right, #417c79, #3dcfb3,#24bf86);
+    color:#fff;
+    font-size: 1.2vw;;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#submitBtn:hover{
+    background-color:#fff;
+    color:#000;
+}
+
+#fname,#phone,#email,#subject,#submitBtn{
+    margin-bottom:20px;
+}
+
+
+.f1{font-size:1.8vw;  @include setMargin(bottom,1.5%);}
+.f2{
+    font-size:2.5vw;
+}
+.slideCenterTxt{
+    position: absolute;
+    top: 40%;  
+    width: 100%;
+    text-align: center;
+}
+.greenGradient{
+    background-image: linear-gradient(to right, #417c79, #3dcfb3,#24bf86);
+    position: absolute;
+    width: 100%;
+}
+
+.socialIcon{
+    color:#fff;
+    display: inline;
+    float: right;
+    margin:3%;
+    
+}
+.copyRightTxt{
+    position: absolute;
+    width: 50%;
+    top: 40%;
+    left:10%;
+    color:#fff;
+}
+
+.slideContainer{
+   
+    background-color: #696eb2;
+}
+
+.headTxt{
+    width:100%;
+    text-align: center;
+    color:#fff;
+    margin-top:5%;
+}
+.headTxt2{
+    @extend .headTxt;
+    font-size: 2.2vw;
+    margin-top: 2%;
+}
+
+.sFlex{
+   display: flex;
+   justify-content: center; 
+   flex-wrap: wrap;
+   margin:2% 0 5% 0;
+}
+.sFlex > img{
+    background-color: #f1f1f1;
+    margin-left:1%;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+
+  .tooltipText, .tooltipName{
+    position: absolute;
+    color: #fff;
+    background-color: rgb(87, 72, 72);
+    padding: 3px;
+    width: 100px;
+    border-radius: 5px;
+    z-index: 1;
+    margin: -2% 0 0 3%;
+}
+.tooltipText[class~=show], .tooltipName[class~=show]{
+    display:block;
+}
+.tooltipText[class~=hide], .tooltipName[class~=hide]{
+    display:none;
+}
+

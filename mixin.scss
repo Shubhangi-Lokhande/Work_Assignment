@@ -1,0 +1,22 @@
+@mixin flexContainerBox {
+  
+    display: flex;
+    justify-content: center;
+    margin-top:5%; 
+
+  }
+
+@mixin setPadding($align,$val){
+
+    padding-#{$align}:$val;
+}
+
+
+@mixin setMargin($align,$val){
+
+    margin-#{$align}:$val;
+}
+
+@mixin setFontSize($size){
+    font-size: $size;
+}
