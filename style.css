@@ -181,11 +181,12 @@ img {
 }
 
 .flexContainer > .flexItem {
-  background-color: #f1f1f1;
   width: 50%;
   text-align: left;
   margin: 2%;
+  background-color: #e9e1e1;
   padding-left: 2%;
+  padding-bottom: 2%;
 }
 
 .downArrow {
@@ -222,7 +223,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 2% 2% 2% 0%;
+  margin-top: 2%;
 }
 
 .iconTxt {
@@ -467,5 +468,28 @@ button[class~=btnLearnMore] {
 
 .tooltipText[class~=hide], .tooltipName[class~=hide] {
   display: none;
+}
+
+/*--button style--*/
+.column {
+  display: none;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #069906;
+  text-decoration: underline;
+}
+
+.btn.activeCls {
+  color: #381ae2;
+  text-decoration: underline;
+}
+
+.show {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

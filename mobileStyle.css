@@ -1,5 +1,14 @@
 @media only screen and (max-width: 768px) {
 
+    .flexBox2,.flexContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    .flexContainer > .flexItem{
+        text-align: center;
+    }
+
     .flexContainer0, .flexContainer1{
         flex-direction: column;
       /*  justify-content: center;
@@ -55,6 +64,13 @@
 
     #subscribeMe{
         width:52px;
+    }
+    .iconTxt{
+        width:170px;
+        
+    }
+    .iconTxt:nth-child(2){
+        width:162px
     }
 }
 

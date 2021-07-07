@@ -143,12 +143,14 @@ img {vertical-align: middle;}
    }
   
   .flexContainer > .flexItem {
-    background-color: #f1f1f1;
+    
     width: 50%;
     text-align: left;
     margin:2%;
+    background-color:#e9e1e1;
     @include setPadding(left,2%);
-    
+    @include setPadding(bottom,2%);
+   
   }
  
   .downArrow{
@@ -180,7 +182,8 @@ img{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding:2% 2% 2% 0%;
+    margin-top:2%;
+    // padding:2% 2% 2% 0%;
 }
 .iconTxt{
    width:185px;
@@ -389,3 +392,24 @@ button[class ~= btnLearnMore]{
     display:none;
 }
 
+/*--button style--*/
+.column{
+    display:none;
+}
+
+.btn{
+   
+    cursor:pointer;
+}
+.btn:hover{
+    color:rgb(6, 153, 6);
+    text-decoration: underline;
+}
+
+.btn.activeCls{
+    color:rgb(56, 26, 226);
+    text-decoration: underline;
+}
+.show{
+    display: block;
+}
